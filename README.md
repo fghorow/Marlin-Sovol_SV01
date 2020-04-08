@@ -23,6 +23,21 @@ To build Marlin 2.0 you'll need [Arduino IDE 1.8.8 or newer](https://www.arduino
   - [Installing Marlin (Arduino)](http://marlinfw.org/docs/basics/install_arduino.html)
   - [Installing Marlin (VSCode)](http://marlinfw.org/docs/basics/install_platformio_vscode.html).
 
+Command Line Instructions from Coptertec response to github bug:
+
+Some steps to compile the firmware:
+
+Download the Soruce Code .zip file from the "Release" section
+Unzip everything
+Copy your needed config from /config/SOVOL/SV01 (example) to /Marlin
+start PlatformIO (recommend VSCode)
+click the compile button at the left bottom (in VSCode)
+
+What I actually did was copy the edited configs to /Marlin then, in the top directory  execute:
+
+platformio run -e mega2560
+
+
 ### Supported Platforms
 
 | Printer name | Printer modification | Firmware prefix | Printer info screen |
