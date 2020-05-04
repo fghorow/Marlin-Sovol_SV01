@@ -406,7 +406,7 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 5
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -450,14 +450,30 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 275
-#define HEATER_1_MAXTEMP 275
-#define HEATER_2_MAXTEMP 275
-#define HEATER_3_MAXTEMP 275
-#define HEATER_4_MAXTEMP 275
-#define HEATER_5_MAXTEMP 275
-#define HEATER_6_MAXTEMP 275
-#define HEATER_7_MAXTEMP 275
+//
+// FIXME
+// DO NOT RUN NORMALLY WITH THESE MAX TEMPS
+// THEY ARE ONLY FOR HOT TIGHTENING THE NOZZLE
+// The hot-tightening maxtemp 300 - 15 = 285
+//
+#define HEATER_0_MAXTEMP 300
+#define HEATER_1_MAXTEMP 300
+#define HEATER_2_MAXTEMP 300
+#define HEATER_3_MAXTEMP 300
+#define HEATER_4_MAXTEMP 300
+#define HEATER_5_MAXTEMP 300
+#define HEATER_6_MAXTEMP 300
+#define HEATER_7_MAXTEMP 300
+// The normal maxtemp 295 - 15 = 280
+// #define HEATER_0_MAXTEMP 295 
+// #define HEATER_1_MAXTEMP 295 
+// #define HEATER_2_MAXTEMP 295 
+// #define HEATER_3_MAXTEMP 295 
+// #define HEATER_4_MAXTEMP 295 
+// #define HEATER_5_MAXTEMP 295 
+// #define HEATER_6_MAXTEMP 295 
+// #define HEATER_7_MAXTEMP 295 
+
 #define BED_MAXTEMP      125
 
 //===========================================================================
